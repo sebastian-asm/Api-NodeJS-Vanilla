@@ -1,11 +1,9 @@
 import http from 'http';
 
+import routes from './routes.js';
+
 const server = http.createServer((req, res) => {
-  const { url, method } = req;
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.write(JSON.stringify({ ok: true }));
-  res.end();
+  routes(req, res);
 });
 
-server.listen(3001);
-console.log('Server on port', 3001);
+server.listen(3001, () => console.log('Server on port', 3001));
