@@ -1,6 +1,6 @@
 # API Rest con NodeJS sin framework
 
-Ids generados automaticamente con la librería **uuid**.
+Ids generados automaticamente con la librería **nanoid** y para persistencia de datos el paquete **lowdb** para guardar de forma local en formato JSON.
 
 Rutas disponibles:
 
